@@ -19,7 +19,7 @@ public class Main {
 
 //        2. Cadenas Java
 
-       /* System.out.println("Cadenas");
+        /*System.out.println("Cadenas");
         System.out.println(cadenas.length());
 
         System.out.println(cadenas.substring(2,5));
@@ -28,7 +28,7 @@ public class Main {
 
 //        3. Variables
 
-        int x=5, x2;
+        /*int x=5, x2;
         double y=1.25, y2;
         String z= "204",z1;
 
@@ -50,7 +50,7 @@ public class Main {
 
         System.out.println(x2);
         System.out.println(z1);
-        System.out.println(asd);
+        System.out.println(asd);*/
 
         Random rdn= new Random();
 
@@ -64,9 +64,9 @@ public class Main {
 
       // 4. Solucitud de datos
 
-       Scanner scn=new Scanner(System.in);
+      /* Scanner scn=new Scanner(System.in);
 
-        System.out.println("Introduce cualquier dato decimales");
+        System.out.println("Introduce cualquier dato ");
         String dato= scn.nextLine();
 
         System.out.println("Introduce cualquier dato Entero");
@@ -77,16 +77,16 @@ public class Main {
 
         System.out.println("Cualquier dato" +dato);
         System.out.println("Dato entero" +datoentero);
-        System.out.println("Dato decirmal" +datoDecimal);
+        System.out.println("Dato decirmal" +datoDecimal);*/
 
         //5. Boolean, operadores logicos y de comparación
 
-        System.out.println(10 > 9);//true
+        /*System.out.println(10 > 9);//true
         System.out.println(10 == 9); //false
         System.out.println(10 < 9); //false
         System.out.println(10 >= 9);//true
         System.out.println(10 <=9); //false
-        System.out.println(10 != 9); //true
+        System.out.println(10 != 9); //true*/
 
         int x= 3;
         System.out.println(x< 5 && x>10); //false
