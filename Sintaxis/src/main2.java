@@ -78,7 +78,7 @@ import java.util.Scanner;
         System.out.println(nombre.toUpperCase() + " tiene " + longitudNombre + " letras.");
     }
 }*/
-public class main2 {
+/*public class main2 {
         public static void main(String [] args){
         Scanner scanner= new Scanner(System.in);
 
@@ -95,6 +95,22 @@ public class main2 {
 
         System.out.println("El peso total del paquete es: " + pesoTotal + " gramos.");
     }
+}*/
+
+public class main2 {
+        public static void main(String [] args){
+                Scanner scanner= new Scanner(System.in);
+
+
+                System.out.print("Introduce una frase: ");
+                String frase = scanner.nextLine();
+
+                String fraseInvertida = new StringBuilder(frase).reverse().toString();
+
+                System.out.println("Frase invertida: " + fraseInvertida);
+
+        }
+
 }
 
 
