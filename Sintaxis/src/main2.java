@@ -47,7 +47,7 @@ import java.util.Scanner;
     }
 }*/
 
-public class main2 {
+/*public class main2 {
     public static void main(String [] args){
         Scanner scanner= new Scanner(System.in);
 
@@ -63,6 +63,37 @@ public class main2 {
 
 
         System.out.println("La suma de todos los enteros desde 1 hasta " + x + " es: " + suma);
+    }
+}*/
+
+/*public class main2 {
+    public static void main(String []  args){
+        Scanner scanner= new Scanner(System.in);
+
+        System.out.print("Introduce tu nombre: ");
+        String nombre = scanner.nextLine();
+
+        int longitudNombre = nombre.length();
+
+        System.out.println(nombre.toUpperCase() + " tiene " + longitudNombre + " letras.");
+    }
+}*/
+public class main2 {
+        public static void main(String [] args){
+        Scanner scanner= new Scanner(System.in);
+
+        System.out.print("Introduce el número de payasos vendidos: ");
+        int payasos = scanner.nextInt();
+
+        System.out.print("Introduce el número de muñecas vendidas: ");
+        int munecas = scanner.nextInt();
+
+        int pesoPayaso = 112; // gramos
+        int pesoMuneca = 75; // gramos
+
+        int pesoTotal = (payasos * pesoPayaso) + (munecas * pesoMuneca);
+
+        System.out.println("El peso total del paquete es: " + pesoTotal + " gramos.");
     }
 }
 
