@@ -1,7 +1,7 @@
 //Primero importamos el escaner
 import java.util.Scanner;
 
-public class main2 {
+/*public class main2 {
     public static void main(String [] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -17,4 +17,33 @@ public class main2 {
 
     }
 
+}*/
+
+public class main2 {
+    public static void main(String [] args){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce tu nombre completo: ");
+
+        String nombreCompleto = scanner.nextLine();
+
+        System.out.print("Nombre en minusculas: " + nombreCompleto.toLowerCase());
+        System.out.print("Nombre en mayusculas: " + nombreCompleto.toUpperCase());
+
+        String[] partesNombre = nombreCompleto.split(" ");
+        StringBuilder nombreCapitalizado = new StringBuilder();
+
+
+        for (String parte : partesNombre) {
+            if (parte.length() > 0) {
+                nombreCapitalizado.append(Character.toUpperCase(parte.charAt(0)))
+                        .append(parte.substring(1).toLowerCase())
+                        .append(" ");
+            }
+        }
+
+        System.out.println("Nombre capitalizado: " + nombreCapitalizado.toString().trim());
+
+    }
 }
+
