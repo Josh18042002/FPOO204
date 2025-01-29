@@ -5,7 +5,7 @@ public class Ejercicio_1 {
         Scanner scanner = new Scanner(System.in);
 
         // Almacenar la contraseña en una variable
-        String contraseñaGuardada = "MiContraseñaSegura";
+        String contraseñaGuardada = "MisPumas5";
 
         // Solicitar al usuario que introduzca la contraseña
         System.out.print("Introduce la contraseña: ");
