@@ -4,19 +4,22 @@ public class Ejercicio_1 {
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Escriba un numero entero: "+"");
-        int numeroEntero = scanner.nextInt();
-        int numero= numeroEntero;
-        
-        if (numero == numeroEntero){
-            System.out.print(numeroEntero =1);
-            System.out.print(numeroEntero =3);
-            System.out.print(numeroEntero =5);
-            System.out.print(numeroEntero =7);
-            System.out.print(numeroEntero =9);
-        } else if (numero == numeroEntero ) {
-            System.out.print("No es un numero positivo");
-        }
+        System.out.print("Escribe un numero entero positivo: ");
+          int numeroEntero = scanner.nextInt();
 
+          if ( numeroEntero <= 0){
+              System.out.print("No es un numero entero");
+          } else if (numeroEntero >=0) {
+              System.out.print("Números impares desde 1 hasta "+ numeroEntero + ": ");
+          }
+          for ( int i= 1; i<= numeroEntero; i++){
+              if (i % 2 != 0){
+                  System.out.println(i);
+                  if (i < numeroEntero - 1){
+                      System.out.println(" ,");
+                  }
+              }
+          }
+          scanner.close();
     }
 }
