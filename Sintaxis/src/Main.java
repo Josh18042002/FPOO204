@@ -64,7 +64,7 @@ public class Main {
 
       // 4. Solucitud de datos
 
-      /* Scanner scn=new Scanner(System.in);
+       Scanner scn=new Scanner(System.in);
 
         System.out.println("Introduce cualquier dato ");
         String dato= scn.nextLine();
@@ -73,11 +73,11 @@ public class Main {
         double datoentero= scn.nextInt();
 
         System.out.println("Introduce cualquier dato decimales");
-        double datoDecimal= scn.nextDouble();
+        double datoDecimal= scn.nextDecimal();
 
         System.out.println("Cualquier dato" +dato);
         System.out.println("Dato entero" +datoentero);
-        System.out.println("Dato decirmal" +datoDecimal);*/
+        System.out.println("Dato decirmal" +datoDecimal);
 
         //5. Boolean, operadores logicos y de comparación
 
