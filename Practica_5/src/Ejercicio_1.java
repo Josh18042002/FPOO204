@@ -14,9 +14,9 @@ public class Ejercicio_1 {
           }
           for ( int i= 1; i<= numeroEntero; i++){
               if (i % 2 != 0){
-                  System.out.println(i);
+                  System.out.print(i);
                   if (i < numeroEntero - 1){
-                      System.out.println(" ,");
+                      System.out.print(" ,");
                   }
               }
           }
