@@ -37,7 +37,7 @@ public class Ejercicio_7 {
 
 
                 System.out.println();
-                i++; /
+                i++;
             }
         }
 
