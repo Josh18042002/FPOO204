@@ -2,51 +2,41 @@ import javax.swing.*;
 
 public class Envios {
 
-    private int CodigoEnvio;
+    private String CodigoEnvio;
     private String Destino;
-    private double peso;
+    private double Peso;
 
 
-    public Envios(int codigoEnvio, String destino, double peso) {
+
+    public Envios(String codigoEnvio, String destino) {
         CodigoEnvio = codigoEnvio;
         Destino = destino;
-        this.peso = peso;
+        Peso = 0;
     }
 
 
-    public static void crearEnvios() {
-        int CodigoEnvio= Integer.parseInt(JOptionPane.showInputDialog("Por favor ingrese el codigo de envio:  "));
-        String Destino = String.valueOf(JOptionPane.showInputDialog("Ahora de favor ingrese su Destino: "));
-        double agregarPeso = Double.valueOf(JOptionPane.showInputDialog("Desea agregar peso del envio SI o No;"));
-        if (){
-            double Peso =Double.parseDouble(JOptionPane.showInputDialog("Por favor ahora ingrese el peso:  "));;
+
+
+    public Envios(String codigoEnvio, String destino, double peso) {
+        CodigoEnvio = codigoEnvio;
+        Destino = destino;
+        Peso = Peso;
+    }
+
+    public void mostrarDetalles() {
+        JOptionPane.showMessageDialog(null, "Código de Envío: " + CodigoEnvio + "\nDestino: " + Destino + "\nPeso: " + Peso + " kg");
+    }
+
+    public static Envios crearEnvio() {
+        String codigoEnvio = JOptionPane.showInputDialog("Ingrese el código de envío");
+        String destino = JOptionPane.showInputDialog("Ingrese el destino del envío");
+        int opcion = JOptionPane.showConfirmDialog(null, "¿Desea ingresar el peso del envío?", "Opción", JOptionPane.YES_NO_OPTION);
+        if (opcion == JOptionPane.YES_OPTION) {
+            double peso = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el peso estimado del envío"));
+            return new Envios(codigoEnvio, destino, peso);
+        } else {
+            return new Envios(codigoEnvio, destino);
         }
 
     }
-
-
-    public int getCodigoEnvio() {
-        return CodigoEnvio;
-    }
-
-    public void setCodigoEnvio(int codigoEnvio) {
-        CodigoEnvio = codigoEnvio;
-    }
-
-    public String getDestino() {
-        return Destino;
-    }
-
-    public void setDestino(String destino) {
-        Destino = destino;
-    }
-
-    public double getPeso() {
-        return peso;
-    }
-
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
-
 }
