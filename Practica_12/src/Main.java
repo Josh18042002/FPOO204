@@ -56,7 +56,7 @@ public class Main {
 
     public static Vehiculo crearVehiculo() {
         String placa = JOptionPane.showInputDialog("Ingrese la placa del vehículo");
-        int modelo = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el modelo del vehículo"));
+        String modelo = JOptionPane.showInputDialog("Ingrese el modelo del vehículo");
         int capacidadDeCarga = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la capacidad de carga del vehículo"));
         return new Vehiculo(placa, modelo, capacidadDeCarga);
     }

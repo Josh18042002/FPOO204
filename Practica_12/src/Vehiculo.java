@@ -1,14 +1,14 @@
 import javax.swing.*;
 
 public class Vehiculo {
-
     private String placa;
-    private int modelo;
+    private String  modelo;
     private int CapacidadDeCarga;
     private GestionDeConductores Conductor;
 
 
-    public Vehiculo(String placa, int modelo, int capacidadDeCarga) {
+
+    public Vehiculo(String placa, String modelo, int capacidadDeCarga) {
         this.placa = placa;
         this.modelo = modelo;
         CapacidadDeCarga = capacidadDeCarga;
@@ -45,11 +45,11 @@ public class Vehiculo {
         this.placa = placa;
     }
 
-    public int getModelo() {
+    public String getModelo() {
         return modelo;
     }
 
-    public void setModelo(int modelo) {
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
